@@ -1,0 +1,13 @@
+{
+	"name": "discourse-lab",
+	"version": "1.0.0",
+	"scripts": {
+		"setup": "./launcher bootstrap app",
+		"start": "./launcher start app",
+		"stop": "./launcher stop app",
+		"logs": "./launcher logs app",
+		"nuke": "./launcher destroy app",
+		"rebuild": "./launcher rebuild app",
+		"setup:admin": "./launcher enter app rake admin:create"
+	}
+}

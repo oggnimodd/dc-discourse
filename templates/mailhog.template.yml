@@ -1,0 +1,9 @@
+run:
+  - exec:
+      hook: mailhog
+      cmd:
+        - "wget -qO /usr/local/bin/mailhog https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64"
+        - "chmod +x /usr/local/bin/mailhog"
+        - "mkdir -p /etc/service/mailhog"
+        - "echo '#!/bin/bash\nexec /usr/local/bin/mailhog' > /etc/service/mailhog/run"
+        - "chmod +x /etc/service/mailhog/run"
