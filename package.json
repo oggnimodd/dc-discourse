@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"setup": "./launcher bootstrap app",
-		"start": "./launcher start app",
+		"start": "./launcher start app --docker-args '--cpus=0.8 --memory=2g'",
 		"stop": "./launcher stop app",
 		"logs": "./launcher logs app",
 		"nuke": "./launcher destroy app",
